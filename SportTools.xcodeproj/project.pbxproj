@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A72AA81027B2CA170037ED5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72AA80F27B2CA170037ED5E /* AppDelegate.swift */; };
+		A72AA81227B2CA170037ED5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72AA81127B2CA170037ED5E /* SceneDelegate.swift */; };
+		A72AA81927B2CA170037ED5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72AA81827B2CA170037ED5E /* Assets.xcassets */; };
+		A72AA81C27B2CA170037ED5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72AA81A27B2CA170037ED5E /* LaunchScreen.storyboard */; };
+		A7E7031527B2CF8E002333DA /* PushUpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7031427B2CF8E002333DA /* PushUpsView.swift */; };
+		A7E7031727B2CF99002333DA /* PushUpsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7031627B2CF99002333DA /* PushUpsConfigurator.swift */; };
+		A7E7031927B2CFA6002333DA /* PushUpsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7031827B2CFA6002333DA /* PushUpsInteractor.swift */; };
+		A7E7031B27B2CFB4002333DA /* PushUpsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7031A27B2CFB4002333DA /* PushUpsPresenter.swift */; };
+		A7E7031F27B2CFC8002333DA /* PushUpsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E7031E27B2CFC8002333DA /* PushUpsRouter.swift */; };
+		A7E7032527B949DF002333DA /* PushUpsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E7032427B949DF002333DA /* PushUpsView.xib */; };
+		A7E7032A27B95138002333DA /* pushUpAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = A7E7032927B95138002333DA /* pushUpAnimation.json */; };
+		DB6C16F6B4C176D8D83561C0 /* Pods_SportTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19990214E1AF4FCB4DFF54DD /* Pods_SportTools.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0038B1F0AF4D575FE3C3908D /* Pods-SportTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportTools.release.xcconfig"; path = "Target Support Files/Pods-SportTools/Pods-SportTools.release.xcconfig"; sourceTree = "<group>"; };
+		159B5325042B75DE0CA14431 /* Pods-SportTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportTools.debug.xcconfig"; path = "Target Support Files/Pods-SportTools/Pods-SportTools.debug.xcconfig"; sourceTree = "<group>"; };
+		19990214E1AF4FCB4DFF54DD /* Pods_SportTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72AA80C27B2CA170037ED5E /* SportTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72AA80F27B2CA170037ED5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A72AA81127B2CA170037ED5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A72AA81827B2CA170037ED5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A72AA81B27B2CA170037ED5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A72AA81D27B2CA170037ED5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7E7031427B2CF8E002333DA /* PushUpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpsView.swift; sourceTree = "<group>"; };
+		A7E7031627B2CF99002333DA /* PushUpsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpsConfigurator.swift; sourceTree = "<group>"; };
+		A7E7031827B2CFA6002333DA /* PushUpsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpsInteractor.swift; sourceTree = "<group>"; };
+		A7E7031A27B2CFB4002333DA /* PushUpsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpsPresenter.swift; sourceTree = "<group>"; };
+		A7E7031E27B2CFC8002333DA /* PushUpsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpsRouter.swift; sourceTree = "<group>"; };
+		A7E7032427B949DF002333DA /* PushUpsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PushUpsView.xib; sourceTree = "<group>"; };
+		A7E7032927B95138002333DA /* pushUpAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pushUpAnimation.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A72AA80927B2CA170037ED5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6C16F6B4C176D8D83561C0 /* Pods_SportTools.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79FC4F60013CCCAA4A3F0751 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19990214E1AF4FCB4DFF54DD /* Pods_SportTools.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A72AA80327B2CA170037ED5E = {
+			isa = PBXGroup;
+			children = (
+				A72AA80E27B2CA170037ED5E /* SportTools */,
+				A72AA80D27B2CA170037ED5E /* Products */,
+				B46BD1152BE50E235A4AA1BC /* Pods */,
+				79FC4F60013CCCAA4A3F0751 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A72AA80D27B2CA170037ED5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A72AA80C27B2CA170037ED5E /* SportTools.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A72AA80E27B2CA170037ED5E /* SportTools */ = {
+			isa = PBXGroup;
+			children = (
+				A7E7031227B2CF77002333DA /* PushUps */,
+				A72AA82327B2CA450037ED5E /* Supporting Files */,
+			);
+			path = SportTools;
+			sourceTree = "<group>";
+		};
+		A72AA82327B2CA450037ED5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A72AA80F27B2CA170037ED5E /* AppDelegate.swift */,
+				A72AA81127B2CA170037ED5E /* SceneDelegate.swift */,
+				A72AA81827B2CA170037ED5E /* Assets.xcassets */,
+				A72AA81A27B2CA170037ED5E /* LaunchScreen.storyboard */,
+				A72AA81D27B2CA170037ED5E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7E7031227B2CF77002333DA /* PushUps */ = {
+			isa = PBXGroup;
+			children = (
+				A7E7032627B94CC9002333DA /* PushUpsEntity */,
+				A7E7031627B2CF99002333DA /* PushUpsConfigurator.swift */,
+				A7E7032327B949D3002333DA /* PushUpsView */,
+				A7E7031827B2CFA6002333DA /* PushUpsInteractor.swift */,
+				A7E7031A27B2CFB4002333DA /* PushUpsPresenter.swift */,
+				A7E7031E27B2CFC8002333DA /* PushUpsRouter.swift */,
+			);
+			path = PushUps;
+			sourceTree = "<group>";
+		};
+		A7E7032327B949D3002333DA /* PushUpsView */ = {
+			isa = PBXGroup;
+			children = (
+				A7E7031427B2CF8E002333DA /* PushUpsView.swift */,
+				A7E7032427B949DF002333DA /* PushUpsView.xib */,
+			);
+			path = PushUpsView;
+			sourceTree = "<group>";
+		};
+		A7E7032627B94CC9002333DA /* PushUpsEntity */ = {
+			isa = PBXGroup;
+			children = (
+				A7E7032927B95138002333DA /* pushUpAnimation.json */,
+			);
+			path = PushUpsEntity;
+			sourceTree = "<group>";
+		};
+		B46BD1152BE50E235A4AA1BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				159B5325042B75DE0CA14431 /* Pods-SportTools.debug.xcconfig */,
+				0038B1F0AF4D575FE3C3908D /* Pods-SportTools.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A72AA80B27B2CA170037ED5E /* SportTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72AA82027B2CA170037ED5E /* Build configuration list for PBXNativeTarget "SportTools" */;
+			buildPhases = (
+				2464385E5C2DB9E7F757CBFF /* [CP] Check Pods Manifest.lock */,
+				A72AA80827B2CA170037ED5E /* Sources */,
+				A72AA80927B2CA170037ED5E /* Frameworks */,
+				A72AA80A27B2CA170037ED5E /* Resources */,
+				1E79EA8C80C67FD5AAFBC894 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SportTools;
+			productName = SportTools;
+			productReference = A72AA80C27B2CA170037ED5E /* SportTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A72AA80427B2CA170037ED5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A72AA80B27B2CA170037ED5E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A72AA80727B2CA170037ED5E /* Build configuration list for PBXProject "SportTools" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A72AA80327B2CA170037ED5E;
+			productRefGroup = A72AA80D27B2CA170037ED5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A72AA80B27B2CA170037ED5E /* SportTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A72AA80A27B2CA170037ED5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72AA81C27B2CA170037ED5E /* LaunchScreen.storyboard in Resources */,
+				A7E7032A27B95138002333DA /* pushUpAnimation.json in Resources */,
+				A7E7032527B949DF002333DA /* PushUpsView.xib in Resources */,
+				A72AA81927B2CA170037ED5E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E79EA8C80C67FD5AAFBC894 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportTools/Pods-SportTools-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SportTools/Pods-SportTools-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SportTools/Pods-SportTools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2464385E5C2DB9E7F757CBFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SportTools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A72AA80827B2CA170037ED5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72AA81027B2CA170037ED5E /* AppDelegate.swift in Sources */,
+				A7E7031F27B2CFC8002333DA /* PushUpsRouter.swift in Sources */,
+				A7E7031B27B2CFB4002333DA /* PushUpsPresenter.swift in Sources */,
+				A7E7031727B2CF99002333DA /* PushUpsConfigurator.swift in Sources */,
+				A7E7031527B2CF8E002333DA /* PushUpsView.swift in Sources */,
+				A7E7031927B2CFA6002333DA /* PushUpsInteractor.swift in Sources */,
+				A72AA81227B2CA170037ED5E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A72AA81A27B2CA170037ED5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72AA81B27B2CA170037ED5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A72AA81E27B2CA170037ED5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A72AA81F27B2CA170037ED5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A72AA82127B2CA170037ED5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 159B5325042B75DE0CA14431 /* Pods-SportTools.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXF59B5585;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SportTools/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "m-development.SportTools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A72AA82227B2CA170037ED5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0038B1F0AF4D575FE3C3908D /* Pods-SportTools.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXF59B5585;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SportTools/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "m-development.SportTools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A72AA80727B2CA170037ED5E /* Build configuration list for PBXProject "SportTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72AA81E27B2CA170037ED5E /* Debug */,
+				A72AA81F27B2CA170037ED5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72AA82027B2CA170037ED5E /* Build configuration list for PBXNativeTarget "SportTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72AA82127B2CA170037ED5E /* Debug */,
+				A72AA82227B2CA170037ED5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A72AA80427B2CA170037ED5E /* Project object */;
+}

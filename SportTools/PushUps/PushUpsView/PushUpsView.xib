@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PushUpsViewController" customModule="SportTools" customModuleProvider="target">
+            <connections>
+                <outlet property="animationView" destination="DrY-oO-Ael" id="0Wt-9b-GGu"/>
+                <outlet property="pushUpCountLabel" destination="IGT-4y-R8g" id="a1J-jT-9JZ"/>
+                <outlet property="setAnimationButton" destination="dha-BG-k6q" id="Xhi-Wd-Bpw"/>
+                <outlet property="view" destination="iN0-l3-epB" id="i3b-g7-D8C"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGT-4y-R8g">
+                    <rect key="frame" x="107" y="44" width="200" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="XeJ-T0-BAd"/>
+                        <constraint firstAttribute="width" constant="200" id="feV-an-XRf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="86"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="DrY-oO-Ael" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="0.0" y="169" width="414" height="727"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-jS-eAI">
+                    <rect key="frame" x="349" y="44" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="OAM-LL-S45"/>
+                        <constraint firstAttribute="width" constant="45" id="jnn-Ri-xsa"/>
+                    </constraints>
+                    <color key="tintColor" red="0.97254901959999995" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="arrow.counterclockwise" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19" scale="large" weight="bold"/>
+                    </state>
+                    <connections>
+                        <action selector="reloadButtonTapped:" destination="-1" eventType="touchUpInside" id="mSk-pF-bmG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dha-BG-k6q">
+                    <rect key="frame" x="20" y="44" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="fiv-Nd-Pfs"/>
+                        <constraint firstAttribute="height" constant="45" id="jxe-gp-bEa"/>
+                    </constraints>
+                    <color key="tintColor" red="0.97254901959999995" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="drop" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="19" scale="large" weight="bold"/>
+                    </state>
+                    <connections>
+                        <action selector="setAnimationButtonTapped:" destination="-1" eventType="touchUpInside" id="NtO-NT-ov0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.042201615604507893" green="0.071110277435415703" blue="0.13996421869355014" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DrY-oO-Ael" secondAttribute="bottom" id="73L-kK-XC8"/>
+                <constraint firstItem="IGT-4y-R8g" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7g7-1E-l0g"/>
+                <constraint firstItem="IGT-4y-R8g" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EJ8-Ov-XkO"/>
+                <constraint firstAttribute="trailing" secondItem="DrY-oO-Ael" secondAttribute="trailing" id="JWh-5v-abj"/>
+                <constraint firstItem="DrY-oO-Ael" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ONa-MZ-3HY"/>
+                <constraint firstItem="dha-BG-k6q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="b1i-va-E62"/>
+                <constraint firstItem="H8a-jS-eAI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="b5V-dh-H5P"/>
+                <constraint firstItem="dha-BG-k6q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="iPD-Gu-QdR"/>
+                <constraint firstItem="DrY-oO-Ael" firstAttribute="top" secondItem="IGT-4y-R8g" secondAttribute="bottom" constant="5" id="o5I-Ta-a33"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="H8a-jS-eAI" secondAttribute="trailing" constant="20" id="ydr-CM-ks4"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.counterclockwise" catalog="system" width="115" height="128"/>
+        <image name="drop" catalog="system" width="101" height="128"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
